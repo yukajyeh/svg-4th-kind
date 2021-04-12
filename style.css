@@ -4,7 +4,13 @@
     --main-color:#ffffff;
     --text-color:#000000;
     --hightlight-color:#2727e6;
+}
 
+
+body.dark-mode {
+    --main-color:#000000;
+    --text-color:#ffffff;
+    --hightlight-color:#ff4141;
 }
 
 body {
@@ -38,17 +44,10 @@ a.dark-mode-toggle {
     left:32px;
 }
 
-a.menu-toggl e {
+a.menu-toggle{
     position:fixed;
     top:32px;
     right:32px;
 }
 
-@media (prefers-color-scheme:dark){
-   :root{
-       --main-color:#000000;
-       --text-color:#ffffff;
-       --highlight-color:#ff4141;
-   }
 
-}
