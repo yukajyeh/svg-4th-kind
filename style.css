@@ -40,8 +40,8 @@ h1 {
 
 a.dark-mode-toggle {
     position: fixed;
-    bottom:32px;
-    left:32px;
+    bottom:60px;
+    left:30px;
 }
 
 a.menu-toggle{
@@ -59,12 +59,17 @@ nav {
     max-width:600px;
     height:90%;
     background-color: var(--main-color);
-    padding:48px;
+    padding:40px;
     transform:translate(100%, 0);
+    transition: transform 1s;
 
     display:flex;
     flex-direction:column;
     justify-content: space-between;
+}
+
+body.nav-open nav {
+    transform: translate(0,0);
 }
 
 nav div {

@@ -4,7 +4,20 @@ const darkModeToggle = document.querySelector('a.dark-mode-toggle')
 
 const darkModeToggleText = darkModeToggle.querySelector('span')
 
+const menuToggle = document.querySelector("a.menu-toggle")
+const menuToggleText = menuToggle.querySelector('span')
+
 const bodyTag = document.querySelector("body")
+
+menuToggle.addEventListener("click", function() {
+    bodyTag.classList.toggle('nav-open')
+
+    if(bodyTag.classList.contains('nav-open')){
+        menuToggleText.innerHTML = "Close"
+    } else {
+        menuToggleText.innerHTML = "Menu"
+    }
+})
 
 darkModeToggle.addEventListener("click", function(){
     bodyTag.classList.toggle("dark-mode")
