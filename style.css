@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-    color:var(--hightlight-color);
+    color: var(--hightlight-color);
 }
 
 h1 {
@@ -38,10 +38,22 @@ h1 {
     left:32px;
 }
 
+h1 rect {
+    fill: var(--hightlight-color);
+}
+
 a.dark-mode-toggle {
     position: fixed;
-    bottom:60px;
+    bottom:40px;
     left:30px;
+}
+
+a.dark-mode-toggle circle {
+    fill: currentColor;
+}
+
+a.dark-mode-toggle rect {
+    stroke: currentColor;
 }
 
 a.menu-toggle{
@@ -51,12 +63,17 @@ a.menu-toggle{
     z-index:1;
 }
 
+a.menu-toggle rect {
+    fill: currentColor;
+}
+
+
 nav {
     position: fixed;
     top: 0;
     right: 0;
     width:100%;
-    max-width:600px;
+    max-width:550px;
     height:90%;
     background-color: var(--main-color);
     padding:40px;
@@ -81,6 +98,10 @@ nav div.internal{
     font-size: 48px;
     line-height: 64px;
     flex:1;
+}
+
+svg {
+    vertical-align: middle;
 }
 
 
