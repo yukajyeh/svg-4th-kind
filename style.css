@@ -78,15 +78,35 @@ nav {
     background-color: var(--main-color);
     padding:40px;
     transform:translate(100%, 0);
-    transition: transform 1s;
+    transition: transform 0.5s 0s;
 
     display:flex;
     flex-direction:column;
     justify-content: space-between;
 }
 
+
+nav.fake-mid {
+    background-color: var(--hightlight-color);
+    transition-delay:0.1s;
+}
+
+nav.fake-back {
+    background-color: var(--text-color);
+    transition-delay:0.2s;
+}
+
 body.nav-open nav {
     transform: translate(0,0);
+    transition-delay:0.2s;
+}
+
+body.nav-open nav.fake-mid {
+    transition-delay:0.1s;
+}
+
+body.nav-open nav.fake-back {
+    transition-delay:0s;
 }
 
 nav div {
@@ -111,3 +131,4 @@ a.dark-mode-toggle g.toggle circle{
 a.dark-mode-toggle:hover g.toggle circle {
     transform: scale(1.75)
 }
+
