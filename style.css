@@ -21,6 +21,11 @@ body {
     background-color: var(--main-color);
     background-image: url(./assets/grid.svg);
     background-position: center center;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:95vh;
 }
 
 a {
@@ -143,3 +148,16 @@ div.wipe {
     transition: background-color 0.0001s 2s;
 }
 
+svg.spiral {
+    border: 2px solid var(--hightlight-color);
+}
+
+svg.spiral rect {
+    stroke: var(--hightlight-color);
+    fill: var(--hightlight-color);
+    fill-opacity:0;
+}
+
+svg.spiral rect:hover {
+    fill-opacity:0.25;
+}
